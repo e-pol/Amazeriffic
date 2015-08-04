@@ -2,6 +2,7 @@
 
 body {
 	background: #f9e933;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 header, main, footer {
@@ -16,6 +17,10 @@ header .container, main .container, footer .container {
 header {
 	background: white;
 	overflow: auto;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Ubuntu', sans-serif;
 }
 
 header h1 {

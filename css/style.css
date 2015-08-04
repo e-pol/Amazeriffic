@@ -18,6 +18,7 @@ header .container, main .container, footer .container {
 header {
 	background: white;
 	overflow: auto;
+	border-bottom: 1px solid gray;
 }
 
 h1, h2, h3, h4 {
@@ -33,21 +34,35 @@ h2 {
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 h4 {
+	font-size: 1.0em;
+}
+
+h5 {
 	font-size: 1.2em;
 }
 
 header h1 {
 	float: left;
 	width: 570px;
+	font-style: italic;
+	color: red;
+	margin: 30px 0;
 }
 
 header nav {
 	float: right;
-	width: 285px;
+	width: 240px;
+	margin-top: 30px;
+	padding-left: 45px;
+}
+
+nav a {
+	text-decoration: none;
+	color: red;
 }
 
 main {
@@ -56,8 +71,61 @@ main {
 	overflow: auto;
 }
 
+main .container {
+	margin-top: 10px;
+}
+
+main h2 {
+	font-weight: bold;
+	margin: 30px 0 15px 0;
+}
+
+
+h2 ~ h3 {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+main img {
+	width: 150px;
+	margin-left: 65px;
+	margin-bottom: 30px;
+}
+
 footer {
+	margin-top: 45px;
 	clear: both;
+}
+
+footer h5 {
+	margin-bottom: 20px;
+}
+
+h5 + p {
+	font-style: italic;
+	color: red;
+}
+
+.sitemap h5 {
+	margin-left: 45px;
+}
+
+.sitemap ul {
+	margin-left: 45px;
+}
+
+.sitemap ul {
+	display: inline-block;
+}
+
+.sitemap + ul {
+	float: left;
+}
+
+.sitemap a {
+	text-decoration: none;
+	color: red;
 }
 
 .right {
